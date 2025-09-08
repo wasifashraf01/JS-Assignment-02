@@ -153,9 +153,27 @@ document.write("Remainder "+ (num1%num2) +"<br>");
 // Chapter 13
 
 // Question 3
-var numb = prompt();
-if (numb) {
-    
-} else if (numb === -){
+var numb = Number(prompt());
+if (numb > 0) {
+    document.write("✅Number is Positive");
+} else if (numb < 0){
+    document.write("❌Number is Negative");
+}else{
+    document.write("⭕Number is 0");
+}
+
+// Question 4
+var char = (prompt("Enter any character in lower case"));
+if (char == "a" || char == "e" || char == "i" || char == "o" || char == "u") {
+    document.write("✅ Correct");
+} else {
+    document.write("❎ Wrong");
+}
+
+// Question 5
+var pass = 12345;
+if (pass === 12345) {
+    alert("Correct ✅");
+} else {
     
 }
