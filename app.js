@@ -152,6 +152,17 @@ document.write("Remainder "+ (num1%num2) +"<br>");
 
 // Chapter 13
 
+// Question 2
+var number1 = Number(prompt());
+var number2 = Number(prompt());
+if (number1 > number2) {
+    document.write("Number1 is Greater from Number 2");
+} else if (number2 > number1){
+    document.write("Number2 is Greater from Number 1");
+}else{
+    document.write("fail");
+}
+
 // Question 3
 var numb = Number(prompt());
 if (numb > 0) {
@@ -171,9 +182,40 @@ if (char == "a" || char == "e" || char == "i" || char == "o" || char == "u") {
 }
 
 // Question 5
-var pass = 12345;
-if (pass === 12345) {
-    alert("Correct ✅");
-} else {
-    
+var pass = prompt("Enter Your Password");
+var confirmpass = prompt("Confirm Password");
+if(pass && confirmpass){
+    if (pass == confirmpass) {
+        alert("Correct ✅");
+    } else {
+        alert("Incorrect ❌");
+    }
+}else{
+    console.log("Fail");
 }
+
+// Question 6
+var greeting;
+var hour = 13;
+if(hour < 18){
+    greeting = "Good Day";
+}else{
+    greeting = "Good Evening";
+}
+         
+// Question 7
+var time = prompt("Enter Time");
+time = parseInt(time);
+
+if (time >= 5 && time <= 11) {
+    alert("Good Morning");
+} else if (time >= 12 && time <= 15) {
+    alert("Good Afternoon");
+} else if (time >= 16 && time <= 21) {
+    alert("Good Evening");
+} else if (time >= 22 || time <= 4) {
+    alert("Good Night");
+} else {
+    alert("Invalid");
+}
+
